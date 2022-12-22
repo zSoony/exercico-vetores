@@ -1,0 +1,56 @@
+package fixaxao_vetores;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Application {
+
+	public static void main(String[] args) {
+	   
+		Scanner sc = new Scanner (System.in);
+		Locale.setDefault(Locale.US);
+	
+		
+	int numeros;
+	double soma, media ;
+	
+	System.out.print("quantos numeros voce vai digitar? ");
+	numeros = sc.nextInt();
+	
+	double [] vetor = new double[numeros];
+
+	for(int i=0; i < vetor.length; i++ ) {
+		System.out.print("digite um numero: ");
+		vetor[i]= sc.nextDouble();
+	}
+	
+	
+	
+	soma=0;
+	for (int i=0; i< vetor.length; i++) {
+		
+		soma = soma + vetor[i];
+	}
+	
+	
+	
+	media = soma / numeros;
+	System.out.print("valores = ");
+	
+	
+	
+	for (int i=0; i<vetor.length; i++) {
+		System.out.printf("%.1f  ", vetor[i] );
+		
+	}
+	
+	System.out.printf("\nSOMA = %.2f\n", soma);
+	System.out.printf("\nMEDIA = %.2f\n", media);
+	
+		
+		
+		sc.close();
+		
+	}
+
+}
