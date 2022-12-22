@@ -3,7 +3,7 @@ package fixaxao_vetores;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Application {
+public class Soma_vetores {
 
 	public static void main(String[] args) {
 	   
